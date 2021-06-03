@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: blueviolet;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    pointer-events: none;
+
+}
+
+.white-keys kbd {
+    display: inline-block;
+    padding-top: 35vh;
+    height: 10vh;
+    width: 6vw;
+    background-color: white;
+    text-align: center;
+    border: outset 3px;
+    font-size: 20px;
+    color: black;
+    pointer-events: all;
+}
+
+kbd {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+.black-keys kbd {
+    display: inline-block;
+    padding-top: 20vh;
+    height: 10vh;
+    width: 6vw;
+    background-color: black;
+    text-align: center;
+    border: outset 3px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15vh;
+    pointer-events: all;
+}
+
+/*
+rgb(59, 59, 59)
+*/
+
+.right {
+    margin-left: 5vw;
+}
+
+.black-keys, .white-keys {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    pointer-events: none;
+}
+
+.push {
+    border: inset 3px !important;
+}
