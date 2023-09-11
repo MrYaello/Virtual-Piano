@@ -55,7 +55,6 @@ function performAction(key) {
 function makeAnimation(keyPressed) {
     keys.forEach(key => {
         if (keyPressed == key.textContent) {
-            console.log("asdasd")
             key.classList.add("push");
             setTimeout(() => {
                 key.classList.remove("push");
